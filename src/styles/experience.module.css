@@ -1,0 +1,54 @@
+.experienceStyle {
+    display: flex;
+    flex-direction: column;
+    padding: 1% 0 1% 0;
+    margin: 2% 0 2% 0
+}
+
+/* .experienceLayout :first-child {
+    margin-top: 0;
+} */
+
+.experienceLayout {
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.roleStyle {
+    margin: 0;
+    font-weight: 600;
+    color: #3B3B3B;
+}
+
+.companyStyle {
+    color: #FF99D1;
+    margin: 10px 0 0 0
+}
+
+.detailsStyle {
+    display: flex;
+}
+
+.listStyle {
+    margin: 0;
+    padding: 15px;
+    color: #3B3B3B;
+}
+
+.itemStyle {
+    padding: 5px 0 5px 0
+}
+
+.detailItemStyle {
+    margin-right: 20px
+}
+
+.detailsStyle > p > svg {
+    margin-right: 10px;
+}
+
+.snippetStyle {
+    font-style: italic;
+    color: #FF99D1;
+    margin: 0
+}

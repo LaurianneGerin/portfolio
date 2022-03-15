@@ -1,62 +1,56 @@
 import * as React from "react"
-// import logo from "../images/LG.png"
-// import Background from "../images/home-background.png"
-import layouts from "../style/layouts.scss"
-import Footer from "../components/footer"
+import layouts from "../styles/layouts.scss"
+import { indexStyle } from "../styles/index.module.css"
 import Header from "../components/header"
 
-////////////////////////////////////////////////////////////////////// styles
-const pageStyles = {
-  // color: "#232129",
-  // padding: "5%",
-  // fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  // backgroundImage: `url(${Background})`,
-  // backgroundRepeat: "no-repeat",
-  // height: "100%",
-}
+
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
+  fontSize: "40px"
 }
 const introStyle = {
-  marginBottom: "5%"  
+  // marginBottom: "5%",
+  lineHeight: 2,  
 }
 const homePageContent = {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
+  padding: "5% 10% 5% 10%",
+  color: "#3B3B3B",
 }
 const headingAccentStyles = {
-  color: "#663399",
+  color: "#FF99D1",
 }
 
-////////////////////////////////////////////////////////////////// data
-const docLink = {
-  text: "Documentation",
-  url: "/experience",
-  color: "#8954A8",
-}
-
-///////////////////////////////////////////////////////////////// markup
 const IndexPage = () => {
   return (
-      <div style={pageStyles}>
-        <Header />
-        <div style={homePageContent}>
-          <h1 style={headingStyles}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            <br />
-            <span style={headingAccentStyles}>— Sed fringilla velit sit amet ante mollis consequat. </span>
-            {/* <span role="img" aria-label="Party popper emojis">
-              🎉🎉🎉
-            </span> */}
-          </h1>
-          <p style={introStyle}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla velit sit amet ante mollis consequat. Suspendisse at dolor a nibh luctus venenatis. Vestibulum vitae condimentum dolor, quis ullamcorper enim. In dapibus elit ac elit posuere suscipit. Duis ut augue consectetur, lobortis nisi ac, varius mauris. Duis sagittis, neque sit amet sollicitudin imperdiet, lorem turpis gravida lectus, non eleifend ipsum tellus nec lacus. Mauris dapibus, diam non eleifend tristique, velit arcu ullamcorper neque, efficitur ornare leo eros a est. Mauris ullamcorper tristique lorem sit amet congue. Integer sed turpis nec nibh eleifend tincidunt. Nunc non urna quis nibh ultrices condimentum. Vivamus congue, quam nec malesuada imperdiet, leo quam porta ligula, at volutpat ipsum libero ac justo. Maecenas nisi arcu, commodo a risus id, semper gravida massa. Nullam eros nunc, commodo vitae ullamcorper id, sollicitudin id diam. Cras luctus eget eros nec accumsan.
-          </p>
-        </div>
-        <Footer/>
+    <div>
+      <Header/>
+      <div style={homePageContent}>
+        <h1 style={headingStyles}>
+          Laurianne Gerin
+          <br />
+          <span style={headingAccentStyles}>— Front-end developer passionate about product design</span>
+          {/* <span role="img" aria-label="Party popper emojis">
+            🎉🎉🎉
+          </span> */}
+        </h1>
+        <p style={introStyle}>
+          <b>I thought I would become an Oceanographer.</b> At 18, the only thing I loved studying was any topics related to the ocean. I learned every different aspect of the ocean possible: chemistry of the ocean water, geology, physical movements of the water and any marine life form.
+          I had a blast for 5 years and graduated the University of Pierre and Marie Curie (UPMC Paris Sorbonne) with a master’s degree. But quickly I had to think about how to make a living with all that knowledge. The obvious next step was to go for a thesis but that’s not what I wanted.
+        </p>
+        <p style={introStyle}>
+          At the end of 2015, I took a year off to travel. I did not go too far, taking advantage of my dual citizenship (French/American), I joined a friend who was studying an entrepreneurial program at Berkeley, California. That’s when I discovered the tech world, joining meet-ups, meeting developers, designers. I had so many questions!
+          I found myself helping my friend on a very basic website for their semester’s pitch contest. How hard could it be compared to oceanography modelling (Matlab) or biology stats (R)? I learned HTML, JS and CSS as well as softwares such as Photoshop and Sketch. I had so much fun, I couldn’t stop learning.
+        </p>
+        <p style={introStyle}>
+          When I came back to France, I knew selling a self-taught experience would be difficult. Nonetheless, under a year, I managed to reorient my path and start as a junior web developer in 2016.
+          Eversince, I learned a lot as a Front-end developer and I am now looking to expend my skills in product design.
+        </p>
       </div>
+    </div>
   )
 }
 
