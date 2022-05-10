@@ -10,7 +10,7 @@ const headerStyle = {
     alignItems: "center",
     height: "50px",
     padding: "1% 0 1% 0",
-    backgroundColor: "#FFDDAD",
+    backgroundColor: "#A499BE",
 }
 
 const homePageLogo = {
@@ -23,7 +23,7 @@ const linkStyle = {
     verticalAlign: "5%",
     textDecoration: "none",
     margin: "0 3% 0 3%",
-    color: "#707070",
+    color: "#ffffff",
     fontWeight: "lighter",
 }
 

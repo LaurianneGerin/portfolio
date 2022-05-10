@@ -1,26 +1,25 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import { Link } from "gatsby"
 import Img from "gatsby-image"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
+
 
 const listStyle = {
-  padding: "0",
-  flexDirection: "column",
-  justifyContent: "space-between",
+  padding: "5% 10%",
 }
 
 const linkStyle = {
     display: "flex",
     flexDirection: "row",
     padding: "3% 0 3% 0",
-    boxShadow: "0px 4px violet",
     backgroundColor: "#ffffff",
     marginBottom: "5%",
+    color: "#9BA2FF",
+    textDecoration: "none",
 }
 
 const imageStyle = {
-  width: "30%"
+  width: "50%"
 }
 
 const projectStyle = {
@@ -28,40 +27,44 @@ const projectStyle = {
   listStyleType: "none",
 }
 
+const subtitleStyle = {
+  color: "#3B3B3B",
+}
 
-export default function playground({ data }) {
+const design = ({data}) => {
+
   return (
-    <div>
-      <Layout>
-        <h1>Playground</h1>
-        <ul style={listStyle}>
-          <Link style={linkStyle} to="/trucmuche">
-            <Img style={imageStyle} fluid={data.imageOne.childImageSharp.fluid} />
-            <li style= {projectStyle} key="1">
-                <h3>Search with an Image</h3>
-                <p>Ikea idea to search either with a query or a picture</p>
-            </li>
-          </Link>
-        </ul>
-      </Layout>
-    </div>
-  )}
-
-export const pageQuery = graphql`
-  query {
-    imageOne: file(relativePath: { eq: "searchWithImage.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+    <Layout>
+      {
+        data.allMdx.nodes.map((node) => (
+          <article key={node.id}>
+            <h2>
+              <Link to={`/playground/${node.slug}`}>
+                {node.frontmatter.title}
+              </Link>
+            </h2>
+          </article>
+        ))
       }
-    }
-    imageTwo: file(relativePath: { eq: "searchWithImage2.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
+    </Layout>
+  )
+}
+
+export default design
+
+export const query = graphql`
+  {
+    allMdx(
+      sort: {fields: frontmatter___projectNumber, order: ASC}
+      filter: {fileAbsolutePath: {regex: "/codeSandboxes/"}}
+    ) {
+      nodes {
+        frontmatter {
+          title
         }
+        id
+        slug
       }
     }
   }
-`;
+`

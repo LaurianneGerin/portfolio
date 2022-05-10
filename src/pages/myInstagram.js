@@ -6,7 +6,7 @@ export default function Instagram() {
   return (
     <Layout>
       <h1>Instagram</h1>
-      <InstaFeeds token={process.env.GATSBY_INS_TOKEN} limit={12}/>
+      <InstaFeeds token={process.env.GATSBY_INS_TOKEN} limit={24}/>
     </Layout>
 )
 }
