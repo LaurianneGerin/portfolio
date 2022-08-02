@@ -51,21 +51,21 @@ const designProjectTemplate = ({data}) => {
 }
 
 
-// export const query = graphql`
-//   query($id: String) {
-//     mdx(id: {eq: $id}) {
-//       body
-//       frontmatter {
-//         title
-//         hero_image_alt
-//         hero_image {
-//           childImageSharp {
-//             gatsbyImageData
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
+export const query = graphql`
+  query($id: String) {
+    mdx(id: {eq: $id}) {
+      body
+      frontmatter {
+        title
+        hero_image_alt
+        hero_image {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+  }
+`
 
 export default designProjectTemplate

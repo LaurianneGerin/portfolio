@@ -10,7 +10,7 @@ const headerStyle = {
     alignItems: "center",
     height: "50px",
     padding: "1% 0 1% 0",
-    backgroundColor: "#A499BE",
+    backgroundColor: "#9AA2FE",
 }
 
 const homePageLogo = {
@@ -19,18 +19,19 @@ const homePageLogo = {
 }
 
 const linkStyle = {
-    fontSize: 18,
+    fontSize: 12,
     verticalAlign: "5%",
     textDecoration: "none",
     margin: "0 3% 0 3%",
     color: "#ffffff",
-    fontWeight: "lighter",
+    fontWeight: "400",
+    textTransform: "uppercase"
 }
 
 const links = [
     {
-      text: "Experiences",
-      url: "/experience",
+      text: "Curriculum",
+      url: "/curriculum",
     },
     {
       text: "Design",
@@ -40,10 +41,10 @@ const links = [
       text: "Playground",
       url: "/playground",
     },
-    {
-        text: "Instagram",
-        url: "/myInstagram",
-    },
+    // {
+    //     text: "Can you see?",
+    //     url: "/myInstagram",
+    // },
     {
         text: "Contact",
         url: "https://www.linkedin.com/in/laurianne-gerin/",

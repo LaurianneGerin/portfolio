@@ -3,11 +3,13 @@ import Header from './header'
 // import Footer from './footer'
 
 const layoutStyle = {
+    display: "flex",
+    flexDirection: "column",
     height: "100%"
 }
 
 const mainStyle = {
-    minHeight: "75vh",
+    height: "100vh",
 }
 
 const Layout = ({ children }) => {
@@ -17,7 +19,7 @@ const Layout = ({ children }) => {
       <main style={mainStyle}>
         {children}
       </main>
-      <Header/>
+      {/* <Header/> */}
     </div>
   )
 }
