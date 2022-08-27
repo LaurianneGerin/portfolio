@@ -8,7 +8,7 @@ const headerStyle = {
     justifyContent: "center",
     width: "100%",
     alignItems: "center",
-    height: "50px",
+    minHeight: "50px",
     padding: "1% 0 1% 0",
     backgroundColor: "#9AA2FE",
 }
@@ -55,7 +55,8 @@ export default function Header() {
   return (
     <div style={headerStyle}>
             <Link to="/" style={linkStyle}>
-                <img alt="lgerin Logo" src={logo} style={homePageLogo} />
+                {/* <img alt="lgerin Logo" src={logo} style={homePageLogo} /> */}
+                <p>Laurianne</p>
             </Link>
         {links.map(link => (
                 <Link

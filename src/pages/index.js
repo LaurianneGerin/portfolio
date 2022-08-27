@@ -32,7 +32,7 @@ const IndexPage = () => {
         <h1 style={headingStyles}>
           Laurianne Gerin
           <br />
-          <span style={headingAccentStyles}>— Front-end developer and junior product designer</span>
+          <span style={headingAccentStyles}>— Junior product designer and Front-end engineer</span>
           {/* <span role="img" aria-label="Party popper emojis">
             🎉🎉🎉
           </span> */}

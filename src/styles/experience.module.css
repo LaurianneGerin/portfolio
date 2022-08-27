@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     padding: 1% 0 1% 0;
-    margin: 2% 0 2% 0
+    margin: 2% 0 2% 0;
+    width: 50%;
 }
 
 /* .experienceLayout :first-child {
@@ -48,7 +49,7 @@
 }
 
 .snippetStyle {
-    font-style: italic;
+    /* font-style: italic; */
     color: #B882FF;
     margin: 0
 }
