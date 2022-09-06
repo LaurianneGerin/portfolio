@@ -11,13 +11,14 @@ const headingStyles = {
 }
 const introStyle = {
   // marginBottom: "5%",
-  lineHeight: 2,  
+  lineHeight: 2,
 }
 const homePageContent = {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   padding: "5% 10% 5% 10%",
+  marginTop: "5%",
   color: "#3B3B3B",
 }
 const headingAccentStyles = {

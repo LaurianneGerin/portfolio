@@ -13,9 +13,8 @@ const articleResumeStyle = {
 const articleLayoutStyle = {
   display: "flex",
   width: "100%",
-  marginTop: "5%",
+  marginTop: "2%",
   marginBottom: "5%",
-  paddingLeft: "5%"
 }
 
 const design = ({data}) => {
@@ -58,7 +57,11 @@ export const query = graphql`
           hero_image_alt
           hero_image {
             childImageSharp {
-              gatsbyImageData(width: 300)
+              gatsbyImageData(
+                width: 300
+                height: 200
+                placeholder: BLURRED
+              )
             }
           }
         }

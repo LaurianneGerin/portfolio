@@ -10,6 +10,10 @@ const layoutStyle = {
 
 const mainStyle = {
     height: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: "5% 10%"
 }
 
 const Layout = ({ children }) => {
