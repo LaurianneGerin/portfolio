@@ -13,7 +13,7 @@ const mainStyle = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    padding: "5% 10%"
+    padding: "5% 10%",
 }
 
 const Layout = ({ children }) => {
