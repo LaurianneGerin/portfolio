@@ -3,21 +3,8 @@ require("dotenv").config({
 })
 
 module.exports = {
-  siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "LGerin",
-  },
   pathPrefix: "/portfolio",
   plugins: [
-    "gatsby-plugin-mdx-embed",
-    "gatsby-plugin-sass",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "123",
-      },
-    },
-    "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
       resolve: `gatsby-plugin-mdx`,
@@ -32,7 +19,9 @@ module.exports = {
         ],
       },
     },
-    // "gatsby-plugin-mdx",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-mdx-embed",
+    "gatsby-plugin-sass",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
