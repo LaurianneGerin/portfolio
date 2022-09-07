@@ -7,6 +7,7 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "LGerin",
   },
+  pathPrefix: "/portfolio",
   plugins: [
     "gatsby-plugin-mdx-embed",
     "gatsby-plugin-sass",
