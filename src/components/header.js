@@ -56,7 +56,7 @@ export default function Header() {
     <div style={headerStyle}>
             <Link to="/" style={linkStyle}>
                 {/* <img alt="lgerin Logo" src={logo} style={homePageLogo} /> */}
-                <p>Laurianne</p>
+                Laurianne
             </Link>
         {links.map(link => (
                 <Link

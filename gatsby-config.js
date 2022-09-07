@@ -8,6 +8,7 @@ module.exports = {
     title: "LGerin",
   },
   plugins: [
+    "gatsby-plugin-mdx-embed",
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-plugin-google-analytics",
@@ -15,13 +16,22 @@ module.exports = {
         trackingId: "123",
       },
     },
-    "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    "gatsby-transformer-remark",
-    "gatsby-remark-images",
+    "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
+    // "gatsby-plugin-mdx",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -51,33 +61,5 @@ module.exports = {
         path: `${__dirname}/codeSandboxes`,
       }
     },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          {
-            resolve:"@weknow/gatsby-remark-codepen",
-            options: {
-              theme: "dark",
-              height: 400
-            }
-          },
-        ]
-      }
-    },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1200,
-            },
-          },
-        ],
-      },
-    },
-
   ],
 };

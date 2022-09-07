@@ -14,10 +14,17 @@ body {
 }
 
 ::selection {
-    color: black;
+    color: "#121212";
     background: #35FF71;
 }
 
 .mdx-embed {
     width: 60%;
 }
+
+a {
+    color: #B882FF;
+}
+a:focus { color: #35FF71}
+
+p, h1, h2, h3, h4 { color: #3b3b3b}

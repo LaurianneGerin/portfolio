@@ -39,10 +39,10 @@ const designProjectTemplate = ({data}) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <p>{data.mdx.frontmatter.date}</p>
-      <GatsbyImage
+      {/* <GatsbyImage
         image={image}
         alt={data.mdx.frontmatter.hero_image_alt}
-      />
+      /> */}
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>

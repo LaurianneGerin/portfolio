@@ -8,6 +8,7 @@ const articleResumeStyle = {
   display: "flex",
   flexDirection: "column",
   paddingLeft: "5%",
+  color: "#3B3B3B"
 }
 
 const articleLayoutStyle = {
