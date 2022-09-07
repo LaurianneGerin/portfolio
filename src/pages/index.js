@@ -18,7 +18,7 @@ const homePageContent = {
   flexDirection: "column",
   alignItems: "center",
   padding: "5% 10% 5% 10%",
-  marginTop: "5%",
+  // marginTop: "5%",
   color: "#3B3B3B",
 }
 const headingAccentStyles = {
@@ -45,10 +45,10 @@ const IndexPage = () => {
         </p> */}
         <p style={introStyle}>I’m a creative mind with a background in marine biology, passionate about building interfaces and solving customer experience problems. </p>
         <p style={introStyle}>
-          After graduating I spent a year figuring out what to do with my professional life. My dream has always been to work at Pixar. I'm constantly fascinated by the level of detail and caring this company puts into creating animated movies. My search lead me to pivot and start a career as a front-end engineer. For 3 years this experience brought me closer to the tech industry and incrementally brought me closer to what I was passionate about: Building visuals to trigger an emotional response.
+          After graduating I spent a year figuring out what to do with my professional life. My dream has always been to work at Pixar. I'm constantly fascinated by the level of detail and caring this company puts into creating animated movies. My search lead me to pivot and start a career as a self-taught front-end engineer. For 3 years this experience brought me closer to the tech industry and incrementally brought me closer to what I was passionate about: Building visuals to trigger an emotional response.
         </p>
-        <p style={introStyle}>Teaching and learning are two practices I’ve always cared about. Hence I joined Algolia as a sales engineer for a year and a developer educator for another year. Finally I was given the chance to move to product design in March 2022.</p>
-        <p style={introStyle}>This website aggregates a few of my contributions over the past years as a junior designer but also some of the visual challenges I like to replicate with code. Hope you will enjoy it as much as I did creating it.</p>
+        <p style={introStyle}>Teaching and learning are two practices I’ve always cared about. Hence I joined Algolia as a sales engineer for a year and as a developer educator for another year. Finally I was given the chance to move to product design in March 2022.</p>
+        <p style={introStyle}>This website aggregates a few of my contributions over the past years as a junior designer but also some of the visual challenges I like to replicate with code. Hope you will enjoy it as much as I did creating it, even with it's imperfections.</p>
       </div>
     </div>
   )

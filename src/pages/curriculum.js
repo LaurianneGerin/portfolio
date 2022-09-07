@@ -21,10 +21,10 @@ const experiences = [
     snippet: "Algolia is a search as a service product. I discovered the targets of the Sales org as a partner engineer and those of the Customer org as a developer educator. Eventually I took the leap into product design.",
     city: "London, UK",
     dateRange: "01/2020-ongoing",
-    description: ["Educated partners on search API and search user experience",
+    description: ["Educated partners on Search API and Search user experience",
     "Built POCs to demonstrate the value of partnering with Algolia",
     "Created content to guide customers through search integration",
-    "Designed components fro the Algolia Recommend product"
+    "Designed components for the Algolia Recommend product"
     ],
   },
   {

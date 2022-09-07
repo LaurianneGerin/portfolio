@@ -13,7 +13,7 @@ const articleResumeStyle = {
 
 const articleLayoutStyle = {
   display: "flex",
-  width: "100%",
+  // width: "100%",
   marginTop: "2%",
   marginBottom: "5%",
 }
@@ -59,8 +59,8 @@ export const query = graphql`
           hero_image {
             childImageSharp {
               gatsbyImageData(
-                width: 300
-                height: 200
+                width: 400
+                height: 300
                 placeholder: BLURRED
               )
             }

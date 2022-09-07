@@ -12,7 +12,7 @@ const mainStyle = {
     height: "100vh",
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",
+    // alignItems: "center",
     padding: "5% 10%",
 }
 
