@@ -5,7 +5,12 @@ require("dotenv").config({
 module.exports = {
   pathPrefix: "/portfolio",
   plugins: [
-    "gatsby-plugin-sharp",
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
+    "gatsby-plugin-sass",
+    "gatsby-plugin-mdx-embed",
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -13,15 +18,12 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 600,
+              maxWidth: 1200,
             },
           },
         ],
       },
     },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-mdx-embed",
-    "gatsby-plugin-sass",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
